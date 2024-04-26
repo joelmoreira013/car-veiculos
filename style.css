@@ -336,7 +336,7 @@ section.venda{
     font-weight: normal;
 }
 .search1{
-    width: 300px;
+    width: 90%;
 }
 .search1 .barra-preco{
     width: 100%;
@@ -354,7 +354,7 @@ section.venda{
     width: 30%;
     height: 20px;
     border-radius: 20px;
-    background: rgb(200, 200, 200);
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(200,200,200));
 }
 .pointer-barra{
     width: 26px;
@@ -364,8 +364,8 @@ section.venda{
     top: -3px;
     cursor: pointer;
     border-radius: 8px;
-    background: rgb( 210, 210, 210);
-    border: 1px solid black;
+    background: linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    border: 1px solid #777;
 }
 .valor-pesquisa{
     margin-top:8px
@@ -402,14 +402,33 @@ section.venda{
     border-radius: 3px;
     vertical-align: top;
     cursor: pointer;
+    position: relative;
+}
+.circle{
+    width: 8px;
+    height: 8px;
+    display: none;
+    border-radius: 4px;
+    background: black;
+    position: absolute;
+    left: 6px;
+    top: 6px;
+}
+.form-venda-wraper input[type=checkbox]:checked + label > .circle{
+    display: block;
 }
 .form-venda-wraper span{
     padding: 0 10px;
     display: inline-block;
     vertical-align: top;
 }
-
-
+.vitrine-venda{
+    float: left;
+    width: 70%;
+}
+.vitrine-venda .vitrine-destaque{
+    margin-top: 20px;
+}
 
 
 
@@ -475,6 +494,21 @@ section.venda{
         padding: 80px 100px;
     }
     .half1, .half2{
+        width: 100%;
+    }
+    .search1{
+        display: inline-block;
+    }
+    .search2{
+        display: inline-block;
+    }
+    .sidebar{
+        width: 100%;
+        text-align: center;
+    }
+    .vitrine-venda{
+        text-align: center;
+        float: left;
         width: 100%;
     }
 
