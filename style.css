@@ -425,12 +425,55 @@ section.venda{
 .vitrine-venda{
     float: left;
     width: 70%;
+    margin: 20px 0;
 }
 .vitrine-venda .vitrine-destaque{
     margin-top: 20px;
 }
-
-
+section.venda-single .container{
+    padding: 40px 2%;
+    max-width: 1280px;
+}
+.info-veiculo{
+    float: left;
+    width: 60%;
+}
+.foto-destaque{
+    width: 100%;
+    padding-top: 70%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.descricao-veiculo{
+    float: left;
+    width: 40%;
+    padding: 0 20px;
+}
+.descricao-veiculo p{
+    margin-top:10px;
+    max-width: 400px;
+}
+.descricao-veiculo a{
+    margin-top: 25px;
+}
+.nav-galeria{
+    width: 100%;
+    padding: 15px;
+    overflow: scroll;
+    margin-top: 15px;
+}
+.nav-galeria-wraper{
+    width: 200%;
+}
+.mini-img{
+    float: left;
+    border: 7px solid white;
+    background-position: center;
+    background-size: cover;
+    padding-top: calc(33.3% * (100 / 200) * 0.7);
+    width:calc(33.3% * (100 / 200)) ;
+}
 
 
 
